@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Cafes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a23422f356.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"> 
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+
+            // Trying to figure out toggling visibility issue with navigation when going back to large screen
+            // let navi = document.getElementById("nav-list");
+
+            // navi.addEventListener(onresize, toggle_visibility){
+            //     display = "block";
+            // };
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="images/Component 1.png" alt="blog spot logo">
+            <ul id="nav-list">
+                <li class="nav-list-item"><a href="index.html">home</a></li>
+                <li class="nav-list-item"><a href="cafes.html">cafes</a></li>
+                <li class="nav-list-item"><a href="views.html">views</a></li>
+                <li class="nav-list-item"><a href="posts.html">posts</a></li>
+            </ul>
+        </nav>
+        <div class="hide">
+            <a href="#" onclick="toggle_visibility('nav-list');"><i class="fas fa-bars fa-lg hamburger ham-toggle"></i></a>
+        </div>
+    </header>
+    <main>
+        <!-- All posts -->        
+        <section class="side-page-description-block">
+            <h1 class="side-page-post-title">cafes.</h1>
+            <p class="side-page-post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Possimus, earum ab. Architecto, doloribus voluptate, quas temporibus exercitationem, 
+                animi deserunt asperiores sequi a nulla fugit accusantium libero amet laudantium nihil quibusdam. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ullam sequi dolorum reiciendis ipsa labore quo eos, dignissimos libero eius sint asperiores recusandae, 
+                vel at aliquam ipsum saepe placeat impedit adipisci? Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Debitis aliquam quidem ullam repudiandae iusto facere exercitationem quas laudantium placeat 
+                tempore, magni recusandae maiores amet, consectetur vitae quia ducimus quibusdam alias!
+            </p>
+        </section>
+        <section class="article-listings">
+                <article class="article-listing">
+                    <div class="article-blog-description">
+                        <h3 class="article-listing-title">Sleeping Village</h3>
+                        <p class="article-listing-body">
+                            Easily overlooked but never underappreciated, this local beergarden/venue is tucked away in the unsuspecting neighborhood of Avondale.
+                            Often mistaken for an office on the outside but can distinguish otherwise with its beautiful artisic black and white mural. 
+                            During the daytime this venue transforms into a coffee bar, perfect seating area if you need some quiet time to study and or do some remote work. 
+                            That is until the nighttime when this venue comes alive just as much as the people whom flock to it. 
+                            From bands to dj’s to comedians this Sleeping Village has plenty of forms of entertainment to offer their community.
+                            Weekly they change the beers that they offer and even can enjoy with their quant patio encompassed by lights that truly build the atmosphere.
+                        </p>
+                    </div>                        
+                    <img class="article-listing-image" src="images/sleeping_village.jpeg" alt="people drinking at the bar in Sleeping Village">
+                </article>
+                <article class="article-listing">
+                    <div class="article-blog-description">
+                        <h3 class="article-listing-title">Cafe Selmarie</h3>
+                        <p class="article-listing-body">
+                            Located in the heart of Lincoln Square in the Giddings Plaza, Cafe Selmarie’s is a French Patisserie. 
+                            They have been serving the community as early as 1983. This bakery brings much foot traffic and is a step away 
+                            from the busy streets of Chicago with a very European feel. It is not uncommon to see a lot of foot traffic surrounding their beautiful storefront and patio. 
+                            The gatherings are not just for the aesthetic but primarily for their pastries, coffee and authentic French entrees. 
+                            Visiting Selmarie it goes without saying decision making is difficult especially upon a first visit. 
+                            Their glass glows with their impressive display of goods. My personal favorite item of choice is the rustic almond raspberry torte, 
+                            the spongey density of the torte coupled with the base layer of raspberry compote is a perfect treat with a nice shot of espresso.
+                            Excellent place to go to relax and or bring a first date, the atmosphere is both quaint and charismatic. Whether it is summertime 
+                            and or winter time there’s no reason why Cafe Selmarie shouldn’t be a must go destination here in the Windy City!
+                        </p>
+                    </div>
+                    <img class="article-listing-image" src="images/cafe_selmarie.jpg" alt="Cafe Selmarie Storefront">
+                </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-body">
+            <h4>Support Local Businesses</h4>
+        </div>
+        <div class="social-media-icons">
+            <a href="instagram.com"><i class="fab fa-instagram fa-2x icon"></i></a>
+            <a href="facebook.com"><i class="fab fa-facebook-square fa-2x icon"></i></a>
+            <a href="twitter.com"><i class="fab fa-twitter fa-2x icon"></i></a>
+            <a href="yelp.com"><i class="fab fa-yelp fa-2x icon"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

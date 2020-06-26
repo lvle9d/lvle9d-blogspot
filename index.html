@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chispot_Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a23422f356.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"> 
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+
+            // Trying to figure out toggling visibility issue with navigation when going back to large screen
+            // let navi = document.getElementById("nav-list");
+
+            // navi.addEventListener(onresize, toggle_visibility){
+            //     display = "block";
+            // };
+
+    </script>
+</head>
+<!-- Hamburger Icon from font awesome -->
+<!-- <i class="fas fa-bars"></i> -->
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="images/Component 1.png" alt="blog spot logo">
+            <ul id="nav-list">
+                <li class="nav-list-item"><a href="index.html">home</a></li>
+                <li class="nav-list-item"><a href="cafes.html">cafes</a></li>
+                <li class="nav-list-item"><a href="views.html">views</a></li>
+                <li class="nav-list-item"><a href="posts.html">posts</a></li>
+            </ul>
+        </nav>
+        <div class="hide">
+            <a href="#" onclick="toggle_visibility('nav-list');"><i class="fas fa-bars fa-lg hamburger ham-toggle"></i></a>
+        </div>
+    </header>
+    <main>
+        <!-- top half of page -->
+        <section class="main-content">
+            <article class="site-intro">
+                <h3 class="site-intro-title">Community Support</h3>
+                <p class="site-intro-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur magnam nisi suscipit temporibus reiciendis sit optio. 
+                    Consequuntur, hic officiis soluta, alias, voluptates aut et iste magni beatae saepe ducimus id. 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, 
+                    sequi expedita temporibus voluptatibus a voluptatem perferendis quasi modi perspiciatis libero 
+                    animi exercitationem, blanditiis sed sunt quibusdam debitis deserunt. 
+                    Expedita, nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolores blanditiis optio illo quibusdam, modi in, nesciunt sint error,
+                    laudantium dignissimos qui nulla iure omnis saepe reiciendis culpa ex. Explicabo, nesciunt.
+                </p>
+            </article>
+            <div class="site-photo">
+                <img class="main-image" src="images/boodlefight.jpg" alt="filipino food being shared">
+            </div>
+        </section>
+        <!-- Bottom half of page -->
+        <section class="article-content">
+            <article class="featured-article">
+                <div class="featured-article-body">
+                    <h4>Sleeping Village</h4>
+                    <p>Easily overlooked but never underappreciated, this local beergarden/venue is tucked away in the unsuspecting neighborhood of Avondale.
+                        Often mistaken for an office on the outside but can distinguish otherwise with its beautiful artisic black and white mural.
+                        <br>
+                        <br>
+                        During the daytime this venue transforms into a coffee bar, perfect seating area if you need some quiet time to study and or do some remote work. 
+                        That is until the nighttime when this venue comes alive just as much as the people whom flock to it. From bands to dj’s to comedians this Sleeping Village has plenty of forms of entertainment to offer their community.
+                    </p>
+                </div>
+                <img class="featured-img" src="images/sleeping_village.jpeg" alt="Two people sitting at the bar inside Sleeping Village">
+            </article>
+            <section class="secondary-featured-article-section">
+                <article class="secondary-featured-article secondary-featured-article-border">
+                    <div class="secondary-featured-article-body">
+                        <h5>Cafe Selmarie</h5>
+                        <p>Located in the heart of Lincoln Square in the Giddings Plaza, Cafe Selmarie’s is a French Patisserie. 
+                            They have been serving the community as early as 1983. 
+                            This bakery brings much foot traffic and is a step away from the busy streets of Chicago with a very European feel. 
+                        </p>
+                    </div>
+                    <img class="secondary-featured-article-img" src="images/cafe_selmarie.jpg" alt="Storefront of Cafe Selmarie">
+                </article>
+                <article class="secondary-featured-article">
+                    <div class="secondary-featured-article-body">
+                        <h5>Iron Heritage</h5>
+                        <p>Deep in the neighborhood of Northcenter, artisan barber and local haircut legend Mike Barbier snips away at Chicago locals locks.
+                            If you find that you need to look sharp for an interview, date and or for just yourself go no further than Iron Heritage Barbershop. 
+                        </p>
+                    </div>    
+                    <img class="secondary-featured-article-img" src="images/iron_heritage.jpg" alt="Mike the Barber cutting Hair">
+                </article>
+            </section>
+        </section>
+        <footer>
+            <div class="footer-body">
+                <h4>Support Local Businesses</h4>
+            </div>
+            <div class="social-media-icons">
+                <a href="instagram.com"><i class="fab fa-instagram fa-2x icon"></i></a>
+                <a href="facebook.com"><i class="fab fa-facebook-square fa-2x icon"></i></a>
+                <a href="twitter.com"><i class="fab fa-twitter fa-2x icon"></i></a>
+                <a href="yelp.com"><i class="fab fa-yelp fa-2x icon"></i></a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

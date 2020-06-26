@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blog Posts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a23422f356.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"> 
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+
+            // Trying to figure out toggling visibility issue with navigation when going back to large screen
+            // let navi = document.getElementById("nav-list");
+
+            // navi.addEventListener(onresize, toggle_visibility){
+            //     display = "block";
+            // };
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="images/Component 1.png" alt="blog spot logo">
+            <ul id="nav-list">
+                <li class="nav-list-item"><a href="index.html">home</a></li>
+                <li class="nav-list-item"><a href="cafes.html">cafes</a></li>
+                <li class="nav-list-item"><a href="views.html">views</a></li>
+                <li class="nav-list-item"><a href="posts.html">posts</a></li>
+            </ul>
+        </nav>
+        <div class="hide">
+            <a href="#" onclick="toggle_visibility('nav-list');"><i class="fas fa-bars fa-lg hamburger ham-toggle"></i></a>
+        </div>
+    </header>
+    <main>
+        <!-- All posts -->        
+        <section class="side-page-description-block">
+            <h1 class="side-page-post-title">posts.</h1>
+            <p class="side-page-post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Possimus, earum ab. Architecto, doloribus voluptate, quas temporibus exercitationem, 
+                animi deserunt asperiores sequi a nulla fugit accusantium libero amet laudantium nihil quibusdam. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ullam sequi dolorum reiciendis ipsa labore quo eos, dignissimos libero eius sint asperiores recusandae, 
+                vel at aliquam ipsum saepe placeat impedit adipisci? Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Debitis aliquam quidem ullam repudiandae iusto facere exercitationem quas laudantium placeat 
+                tempore, magni recusandae maiores amet, consectetur vitae quia ducimus quibusdam alias!
+            </p>
+        </section>
+        <section class="article-listings">
+                <article class="article-listing">
+                    <div class="article-blog-description">
+                        <h3 class="article-listing-title">Sleeping Village</h3>
+                        <p class="article-listing-body">
+                            Easily overlooked but never underappreciated, this local beergarden/venue is tucked away in the unsuspecting neighborhood of Avondale.
+                            Often mistaken for an office on the outside but can distinguish otherwise with its beautiful artisic black and white mural. 
+                            During the daytime this venue transforms into a coffee bar, perfect seating area if you need some quiet time to study and or do some remote work. 
+                            That is until the nighttime when this venue comes alive just as much as the people whom flock to it. 
+                            From bands to dj’s to comedians this Sleeping Village has plenty of forms of entertainment to offer their community.
+                            Weekly they change the beers that they offer and even can enjoy with their quant patio encompassed by lights that truly build the atmosphere.
+                        </p>
+                    </div>                        
+                    <img class="article-listing-image" src="images/sleeping_village.jpeg" alt="people drinking at the bar in Sleeping Village">
+                </article>
+                <article class="article-listing">
+                    <div class="article-blog-description">  
+                        <h3 class="article-listing-title">Iron Heritage</h3>
+                        <p class="article-listing-body">
+                            Deep in the neighborhood of Northcenter, artisan barber and local haircut legend Mike Barbier snips away at Chicago locals locks. 
+                            If you find that you need to look sharp for an interview, date and or for just yourself go no further than Iron Heritage Barbershop. 
+                            Walking into the barbershop decorated in rustic wear and nostalgic barber chairs, you can wait in the lobby and view all the products this true Chicagoan has to offer. 
+                            His haircare products vary from anything such as combs, haircare, skin and apparel.  
+                            If you need advice and or guidance Mike will share his bevy of knowledge of hair care of maintenance and will not shy around light fun conversation. 
+                            I always go for a classic cut and grab a bottle of his conditioner.   
+                            Don’t worry about any wait if you’re a drop in. Theres a complimentary assortment of bottles of whiskey for your tasting as well!
+                        </p>
+                    </div>    
+                    <img class="article-listing-image" src="images/iron_heritage.jpg" alt="Mike Weinberg cutting customers hair">
+                </article>
+                <article class="article-listing">
+                    <div class="article-blog-description">
+                        <h3 class="article-listing-title">Aloha Eats</h3>
+                        <p class="article-listing-body">
+                            With its surfboard sign and tropical colors its very hard to miss this Hawaiian eatery. Found in the Lakeview East Aloha Eats is a unique must stop in the city of Chicago. 
+                            Aloha Eats food captures every bit of the islands essence. 
+                            Their walls are covered with memorabilia from the tropical paradise and pictures of both Chicago and Hawaiian locals breaking bread. 
+                            Hailed for so many of their entrees, it is hard to pass on their Musubi. 
+                            Offered Katsu style meaning fried in panko breading this Hawaiian rice roll is not for the faint of heart. 
+                            Overwhelming with flavor and compact for an on the go lifestyle, these are a tasty treat you cannot pass up.
+                            If by chance you have time to sit down, try the classic chicken katsu curry comes with a heaping pile of rice and generous portion of Hawaiian macaroni salad.
+                            Do not pass up the chance to be served some true comfort food as this place hits it out of the park.
+                        </p>
+                    </div>
+                    <img class="article-listing-image" src="images/aloha_eats.jpg" alt="Aloha Eats Resturant Window">
+                </article>
+                <article class="article-listing">
+                    <div class="article-blog-description">
+                        <h3 class="article-listing-title">Ginza Festival</h3>
+                        <p class="article-listing-body">
+                            The Ginza Festival is a wonderful Japanese Festival held annually at the Midwest Buddhist Temple 
+                            where the members serve food and educate the community about Japanese customs, culture and art. 
+                            There are plenty events held from drum circles, traditional plays and judo demonstrations held by local dojos. 
+                            Enjoy authentic Japanese cuisine while you watch the shows or take it around to observe all the art and jewelry 
+                            vendors from various areas of the States.
+                            Take time to view the inside of the beautiful temple and sit in and learn about buddhist culture and customs. 
+                            Share stories with all people alike whom share the same affinity of Japanese culture. 
+                            This is one of the many great summer events held in the diverse city of Chicago.
+                        </p>
+                    </div>
+                    <img class="article-listing-image" src="images/ginza.jpg" alt="Ginza Festival Celebration Drumming Demonstration">
+                </article>
+                <article class="article-listing">
+                    <div class="article-blog-description">
+                        <h3 class="article-listing-title">Montrose Beach</h3>
+                        <p class="article-listing-body">
+                            There are plenty of scenic views of the city but I am partial to Montrose Beach. 
+                            Here you’ll find plenty of things to see such as skateboarders tearing up a bowl, 
+                            legions of dogs wrestling each other in the sand, volleyball tournaments, early morning local fisherman, 
+                            nature walks for the bird lovers and last but not least an amazing view of the city’s breathtaking landscape.
+                            I like going in the morning time for long walks and chilling in the park, its often you see plenty of people trying 
+                            to do the same catching rays of sunshine and or working their sailboats at the docks. 
+                            The beach is never short of views and events in the summertime. Here they host several events as well from marathons to music festivals.
+                            Needless to say its impossible to bored when you’re visiting one of the lakes most amazing features. 
+                        </p>
+                    </div>
+                    <img class="article-listing-image" src="images/montrose_beach.jpg" alt="Montrose Beachfront">
+                </article>
+                <article class="article-listing">
+                    <div class="article-blog-description">
+                        <h3 class="article-listing-title">Cafe Selmarie</h3>
+                        <p class="article-listing-body">
+                            Located in the heart of Lincoln Square in the Giddings Plaza, Cafe Selmarie’s is a French Patisserie. 
+                            They have been serving the community as early as 1983. This bakery brings much foot traffic and is a step away 
+                            from the busy streets of Chicago with a very European feel. It is not uncommon to see a lot of foot traffic surrounding their beautiful storefront and patio. 
+                            The gatherings are not just for the aesthetic but primarily for their pastries, coffee and authentic French entrees. 
+                            Visiting Selmarie it goes without saying decision making is difficult especially upon a first visit. 
+                            Their glass glows with their impressive display of goods. My personal favorite item of choice is the rustic almond raspberry torte, 
+                            the spongey density of the torte coupled with the base layer of raspberry compote is a perfect treat with a nice shot of espresso.
+                            Excellent place to go to relax and or bring a first date, the atmosphere is both quaint and charismatic. Whether it is summertime 
+                            and or winter time there’s no reason why Cafe Selmarie shouldn’t be a must go destination here in the Windy City!
+                        </p>
+                    </div>
+                    <img class="article-listing-image" src="images/cafe_selmarie.jpg" alt="Cafe Selmarie Storefront">
+                </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-body">
+            <h4>Support Local Businesses</h4>
+        </div>
+        <div class="social-media-icons">
+            <a href="instagram.com"><i class="fab fa-instagram fa-2x icon"></i></a>
+            <a href="facebook.com"><i class="fab fa-facebook-square fa-2x icon"></i></a>
+            <a href="twitter.com"><i class="fab fa-twitter fa-2x icon"></i></a>
+            <a href="yelp.com"><i class="fab fa-yelp fa-2x icon"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

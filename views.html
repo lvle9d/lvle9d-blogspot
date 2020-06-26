@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Chicago Sites</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a23422f356.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"> 
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+
+            // Trying to figure out toggling visibility issue with navigation when going back to large screen
+            // let navi = document.getElementById("nav-list");
+
+            // navi.addEventListener(onresize, toggle_visibility){
+            //     display = "block";
+            // };
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="images/Component 1.png" alt="blog spot logo">
+            <ul id="nav-list">
+                <li class="nav-list-item"><a href="index.html">home</a></li>
+                <li class="nav-list-item"><a href="cafes.html">cafes</a></li>
+                <li class="nav-list-item"><a href="views.html">views</a></li>
+                <li class="nav-list-item"><a href="posts.html">posts</a></li>
+            </ul>
+        </nav>
+        <div class="hide">
+            <a href="#" onclick="toggle_visibility('nav-list');"><i class="fas fa-bars fa-lg hamburger ham-toggle"></i></a>
+        </div>
+    </header>
+    <main>
+        <!-- All posts -->        
+        <section class="side-page-description-block">
+            <h1 class="side-page-post-title">views.</h1>
+            <p class="side-page-post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Possimus, earum ab. Architecto, doloribus voluptate, quas temporibus exercitationem, 
+                animi deserunt asperiores sequi a nulla fugit accusantium libero amet laudantium nihil quibusdam. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ullam sequi dolorum reiciendis ipsa labore quo eos, dignissimos libero eius sint asperiores recusandae, 
+                vel at aliquam ipsum saepe placeat impedit adipisci? Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Debitis aliquam quidem ullam repudiandae iusto facere exercitationem quas laudantium placeat 
+                tempore, magni recusandae maiores amet, consectetur vitae quia ducimus quibusdam alias!
+            </p>
+        </section>
+        <section class="article-listings">
+            <article class="article-listing">
+                <div class="article-blog-description">
+                    <h3 class="article-listing-title">Ginza Festival</h3>
+                    <p class="article-listing-body">
+                        The Ginza Festival is a wonderful Japanese Festival held annually at the Midwest Buddhist Temple 
+                        where the members serve food and educate the community about Japanese customs, culture and art. 
+                        There are plenty events held from drum circles, traditional plays and judo demonstrations held by local dojos. 
+                        Enjoy authentic Japanese cuisine while you watch the shows or take it around to observe all the art and jewelry 
+                        vendors from various areas of the States.
+                        Take time to view the inside of the beautiful temple and sit in and learn about buddhist culture and customs. 
+                        Share stories with all people alike whom share the same affinity of Japanese culture. 
+                        This is one of the many great summer events held in the diverse city of Chicago.
+                    </p>
+                </div>
+                <img class="article-listing-image" src="images/ginza.jpg" alt="Ginza Festival Celebration Drumming Demonstration">
+            </article>
+            <article class="article-listing">
+                <div class="article-blog-description">
+                    <h3 class="article-listing-title">Montrose Beach</h3>
+                    <p class="article-listing-body">
+                        There are plenty of scenic views of the city but I am partial to Montrose Beach. 
+                        Here you’ll find plenty of things to see such as skateboarders tearing up a bowl, 
+                        legions of dogs wrestling each other in the sand, volleyball tournaments, early morning local fisherman, 
+                        nature walks for the bird lovers and last but not least an amazing view of the city’s breathtaking landscape.
+                        I like going in the morning time for long walks and chilling in the park, its often you see plenty of people trying 
+                        to do the same catching rays of sunshine and or working their sailboats at the docks. 
+                        The beach is never short of views and events in the summertime. Here they host several events as well from marathons to music festivals.
+                        Needless to say its impossible to bored when you’re visiting one of the lakes most amazing features. 
+                    </p>
+                </div>
+                <img class="article-listing-image" src="images/montrose_beach.jpg" alt="Montrose Beachfront">
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-body">
+            <h4>Support Local Businesses</h4>
+        </div>
+        <div class="social-media-icons">
+            <a href="instagram.com"><i class="fab fa-instagram fa-2x icon"></i></a>
+            <a href="facebook.com"><i class="fab fa-facebook-square fa-2x icon"></i></a>
+            <a href="twitter.com"><i class="fab fa-twitter fa-2x icon"></i></a>
+            <a href="yelp.com"><i class="fab fa-yelp fa-2x icon"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
