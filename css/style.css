@@ -12,6 +12,10 @@ a:hover, a:focus{
     color: black;
 }
 
+.active, a:active{
+    color: black;
+}
+
 a .icon:hover{
     color: yellow;
 }
